@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DyslexiPen | Tecnologia para uma escrita inclusiva</title>
+
+  <meta name="description" content="Conhece a DyslexiPen, um projeto de caneta inteligente que pretende apoiar pessoas com dislexia na escrita e promover a inclusão escolar.">
+
+  <meta name="keywords" content="DyslexiPen, dislexia, caneta inteligente, escrita, inclusão escolar, educação">
+
+  <meta name="theme-color" content="#173B68">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #172B45;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 15px #0000000c;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #173B68;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #334155;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #3285C7;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #edf5ff, #ffffff);
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      min-height: 570px;
+    }
+
+    .hero-content {
+      max-width: 590px;
+    }
+
+    .tag {
+      color: #2877B9;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 58px);
+      line-height: 1.15;
+      margin: 20px 0;
+      color: #173B68;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #52657B;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2169A5;
+      color: white;
+      padding: 13px 26px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #174C79;
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      width: 42%;
+      max-width: 490px;
+      border-radius: 24px;
+    }
+
+    section {
+      padding: 85px 8%;
+      scroll-margin-top: 85px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 35px;
+      color: #173B68;
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 45px;
+      color: #64748b;
+    }
+
+    .product {
+      background: #f4f8fd;
+      display: flex;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .product img {
+      width: 42%;
+      border-radius: 20px;
+    }
+
+    .product-text {
+      flex: 1;
+    }
+
+    .product-text h2 {
+      font-size: 32px;
+      color: #173B68;
+      margin-bottom: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e4ebf3;
+      border-radius: 15px;
+      padding: 28px;
+      box-shadow: 0 5px 20px #173b680a;
+    }
+
+    .card h3 {
+      color: #2169A5;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .problem {
+      background: #f4f8fd;
+    }
+
+    .mission {
+      text-align: center;
+      background: #173B68;
+      color: white;
+    }
+
+    .mission h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .mission p {
+      max-width: 780px;
+      margin: auto;
+      color: #e1ebf7;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .pros {
+      border-top: 4px solid #28a477;
+    }
+
+    .cons {
+      border-top: 4px solid #e5a13a;
+    }
+
+    .ods-card {
+      text-align: center;
+    }
+
+    .ods-number {
+      font-size: 32px;
+      font-weight: bold;
+      color: #2169A5;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #edf5ff;
+    }
+
+    footer {
+      background: #102b49;
+      color: white;
+      text-align: center;
+      padding: 30px 8%;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #d0dbea;
+    }
+
+    .notice {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 13px;
+      }
+
+      .hero, .product {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 7%;
+      }
+
+      .hero-image, .product img {
+        width: 100%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">✒ DyslexiPen</div>
+
+  <nav aria-label="Navegação principal">
+    <a href="#inicio">Início</a>
+    <a href="#produto">Produto</a>
+    <a href="#problema">Problema</a>
+    <a href="#missao">Missão</a>
+    <a href="#ods">ODS</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <span class="tag">TECNOLOGIA COM PROPÓSITO</span>
+
+    <h1>Cada letra no lugar, mais sonhos para alcançar!</h1>
+
+    <p>
+      Conhece a DyslexiPen: uma ideia inovadora que pretende
+      transformar a experiência da escrita e ajudar a construir
+      um futuro com mais inclusão e autonomia.
+    </p>
+
+    <a href="#produto" class="btn">Conhecer o projeto</a>
+  </div>
+
+  <img class="hero-image"
+    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
+    alt="Material de escrita sobre uma secretária">
+</section>
+
+<section class="product" id="produto">
+  <img
+    src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=900"
+    alt="Caneta e material de escrita">
+
+  <div class="product-text">
+    <span class="tag">A NOSSA IDEIA</span>
+    <h2>Uma caneta. Novas possibilidades.</h2>
+
+    <p>
+      A DyslexiPen é um projeto de caneta inteligente que pretende
+      identificar padrões e dificuldades na escrita, como trocas
+      ou confusões entre letras.
+    </p>
+
+    <p>
+      Através de tecnologia de reconhecimento da escrita,
+      pretende apresentar sugestões e apoiar os utilizadores
+      na melhoria das suas competências de escrita.
+    </p>
+
+    <p>
+      O objetivo é proporcionar uma experiência mais acessível,
+      prática e inclusiva, especialmente no contexto escolar.
+    </p>
+  </div>
+</section>
+
+<section class="problem" id="problema">
+  <h2 class="section-title">O problema que queremos resolver</h2>
+
+  <p class="section-description">
+    As dificuldades de escrita associadas à dislexia podem
+    tornar algumas tarefas escolares mais exigentes.
+    Queremos contribuir para uma experiência de aprendizagem
+    mais simples e inclusiva.
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Dificuldades na escrita</h3>
+      <p>
+        Confusão entre letras, erros ortográficos e dificuldades
+        na organização da escrita.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Desafios escolares</h3>
+      <p>
+        As dificuldades podem afetar o ritmo de aprendizagem
+        e o desempenho nas atividades escolares.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Falta de autonomia</h3>
+      <p>
+        Alguns alunos precisam de apoio adicional para
+        realizar tarefas de escrita com confiança.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="missao">
+  <div class="mission" style="padding:60px 8%; border-radius:20px;">
+    <h2>A nossa missão</h2>
+    <p>
+      Queremos desenvolver uma solução tecnológica que ajude
+      pessoas com dislexia a escrever com maior autonomia,
+      confiança e facilidade, promovendo a inclusão e a
+      igualdade de oportunidades na educação.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Vantagens e desafios</h2>
+
+  <p class="section-description">
+    A inovação também implica reconhecer os desafios
+    que precisamos de superar.
+  </p>
+
+  <div class="pros-cons">
+    <article class="card pros">
+      <h3>✓ Vantagens</h3>
+      <p>• Apoio à escrita e à aprendizagem.</p>
+      <p>• Maior inclusão escolar e autonomia.</p>
+      <p>• Apoio prático e discreto.</p>
+      <p>• Possibilidade de identificar padrões de escrita.</p>
+      <p>• Promoção da confiança dos utilizadores.</p>
+    </article>
+
+    <article class="card cons">
+      <h3>! Desafios</h3>
+      <p>• Custo de desenvolvimento e produção.</p>
+      <p>• Existência de outras soluções tecnológicas.</p>
+      <p>• Possibilidade de erros de reconhecimento.</p>
+      <p>• Necessidade de adaptação dos utilizadores.</p>
+      <p>• Proteção e segurança dos dados recolhidos.</p>
+    </article>
+  </div>
+
+  <p class="notice">
+    A identificação de padrões de escrita não permite,
+    por si só, diagnosticar dislexia.
+  </p>
+</section>
+
+<section class="problem" id="ods">
+  <h2 class="section-title">O nosso impacto nos ODS</h2>
+
+  <p class="section-description">
+    A DyslexiPen pretende contribuir para três Objetivos
+    de Desenvolvimento Sustentável das Nações Unidas.
+  </p>
+
+  <div class="cards">
+    <article class="card ods-card">
+      <div class="ods-number">ODS 3</div>
+      <h3>Saúde de Qualidade</h3>
+      <p>
+        Promover o bem-estar e apoiar a inclusão,
+        respeitando as necessidades individuais.
+      </p>
+    </article>
+
+    <article class="card ods-card">
+      <div class="ods-number">ODS 4</div>
+      <h3>Educação de Qualidade</h3>
+      <p>
+        Incentivar uma educação inclusiva e
+        oportunidades de aprendizagem para todos.
+      </p>
+    </article>
+
+    <article class="card ods-card">
+      <div class="ods-number">ODS 9</div>
+      <h3>Inovação e Infraestruturas</h3>
+      <p>
+        Incentivar a inovação tecnológica e o
+        desenvolvimento de novas soluções.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="contact" id="contactos">
+  <h2 class="section-title">O futuro da escrita começa aqui.</h2>
+
+  <p class="section-description">
+    Acreditamos que a tecnologia pode ajudar a construir
+    uma sociedade mais inclusiva, onde todos tenham
+    oportunidade de aprender e evoluir.
+  </p>
+
+  <a href="#inicio" class="btn">Descobrir a DyslexiPen</a>
+</section>
+
+</main>
+
+<footer>
+  <h3>DyslexiPen</h3>
+  <p>Cada letra no lugar, mais sonhos para alcançar!</p>
+  <p>© 2026 DyslexiPen — Projeto em desenvolvimento.</p>
+</footer>
+
+</body>
+</html>
+

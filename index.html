@@ -238,4 +238,556 @@
 
     .card h3 {
       color: #2169A5;
-      margin-bottom: 1
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .mission-box {
+      background: #173B68;
+      color: white;
+      padding: 55px 8%;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .mission-box h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .mission-box p {
+      max-width: 780px;
+      margin: auto;
+      color: #e1ebf7;
+    }
+
+    .values-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .value-badge {
+      background: #edf5ff;
+      color: #173B68;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .pros {
+      border-top: 4px solid #28a477;
+    }
+
+    .cons {
+      border-top: 4px solid #e5a13a;
+    }
+
+    .ods-card {
+      text-align: center;
+    }
+
+    .ods-number {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2169A5;
+      margin-bottom: 8px;
+    }
+
+    .faq-container {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    details {
+      background: white;
+      border: 1px solid #e4ebf3;
+      border-radius: 12px;
+      padding: 18px 24px;
+    }
+
+    summary {
+      font-weight: bold;
+      color: #173B68;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #52657B;
+      font-size: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #edf5ff;
+    }
+
+    .social-box {
+      margin-bottom: 28px;
+    }
+
+    .social-box p {
+      color: #334155;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .contact-form {
+      max-width: 540px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      align-self: center;
+      width: 100%;
+    }
+
+    footer {
+      background: #102b49;
+      color: white;
+      text-align: center;
+      padding: 35px 8%;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand img {
+      height: 38px;
+      width: auto;
+      background: #ffffff;
+      padding: 3px;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #d0dbea;
+      margin-top: 6px;
+    }
+
+    .footer-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero, .product {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-image, .product img {
+        width: 100%;
+      }
+
+      .cards, .pros-cons {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="#inicio" class="logo">
+    <img src="https://rs1978rs1978rafael-prog.github.io/DyslexiPen/lgdp.jpg" alt="Logótipo DyslexiPen">
+    <span>DyslexiPen</span>
+  </a>
+
+  <nav aria-label="Navegação principal">
+    <a href="#produto">Produto</a>
+    <a href="#publico">Para Quem</a>
+    <a href="#mercado">Dados</a>
+    <a href="#missao">Identidade</a>
+    <a href="#ods">ODS</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contactos">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <span class="tag">TECNOLOGIA COM PROPÓSITO</span>
+
+    <h1>Cada letra no lugar, mais sonhos para alcançar!</h1>
+
+    <p>
+      Conhece a DyslexiPen: um projeto de tecnologia educativa focado em identificar
+      padrões de escrita, sugerir correções em tempo real e promover a inclusão escolar e a autonomia.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#produto" class="btn">Conhecer o projeto</a>
+      <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer" class="btn-outline">Instagram @dyslexipen</a>
+    </div>
+  </div>
+
+  <img class="hero-image"
+    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900"
+    alt="Ambiente de aprendizagem e estudo inclusivo">
+</section>
+
+<section class="product bg-light" id="produto">
+  <img
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+    alt="Tecnologia aplicada à educação e aprendizagem">
+
+  <div class="product-text">
+    <span class="tag">A NOSSA SOLUÇÃO</span>
+    <h2>Uma ideia focada na escrita e na inclusão.</h2>
+
+    <p>
+      A <strong>DyslexiPen</strong> está a ser pensada com tecnologia de reconhecimento da escrita para
+      identificar possíveis erros ortográficos, trocas e confusões entre letras no momento em que o aluno escreve.
+    </p>
+
+    <p>
+      Ao apresentar sugestões de correção em tempo real de forma prática e discreta,
+      pretende permitir que cada estudante melhore o seu desempenho sem se sentir diferente dos colegas.
+    </p>
+
+    <p>
+      Além disso, poderá ajudar a reconhecer sinais precoces de dificuldades na escrita, incentivando a procura atempada de acompanhamento especializado.
+    </p>
+  </div>
+</section>
+
+<section id="publico">
+  <h2 class="section-title">Para quem foi criada?</h2>
+  <p class="section-description">
+    Uma solução pensada para apoiar o dia a dia escolar e criar uma ponte entre alunos, famílias e especialistas.
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <h3>Alunos (7 aos 18 anos)</h3>
+      <p>
+        Crianças e jovens com dislexia ou dificuldades na escrita que procuram maior autonomia, confiança e fluidez nas tarefas escolares diárias.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Pais e Encarregados</h3>
+      <p>
+        Famílias que desejam acompanhar a evolução da escrita dos seus filhos e identificar precocemente a necessidade de apoio especializado.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Escolas e Terapeutas</h3>
+      <p>
+        Professores, psicólogos e terapeutas da fala que valorizam ferramentas inclusivas para facilitar a aprendizagem em sala de aula.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="bg-light" id="mercado">
+  <h2 class="section-title">Dados de Mercado</h2>
+  <p class="section-description">
+    Indicadores recentes que reforçam a relevância do apoio à escrita e da inclusão educativa.
+  </p>
+
+  <div class="stats-grid">
+    <article class="card">
+      <div class="stat-highlight">~1 em cada 10</div>
+      <h3>Crianças com dislexia</h3>
+      <p>
+        Em outubro de 2025, a Associação Portuguesa de Dislexia indicou que a dislexia afeta cerca de 1 em cada 10 crianças.
+      </p>
+      <p>
+        Mostra um público significativo que beneficia de apoio contínuo na escrita.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="stat-highlight">27,8%</div>
+      <h3>Dislexia no ensino superior</h3>
+      <p>
+        No ano letivo 2024/2025, a dislexia representou 27,8% das problemáticas identificadas entre os estudantes com necessidades educativas específicas do Politécnico de Coimbra.
+      </p>
+      <p>
+        Reforça a importância de soluções de apoio à escrita ao longo do percurso académico.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="stat-highlight">Pré-escolar</div>
+      <h3>Identificação precoce</h3>
+      <p>
+        Em 2025, a Associação Portuguesa de Dislexia defendeu a identificação precoce das dificuldades de aprendizagem, começando ainda no pré-escolar.
+      </p>
+      <p>
+        Destaca a relevância de reconhecer sinais de dificuldade o quanto antes.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="stat-highlight">161 → 205</div>
+      <h3>Necessidades de apoio educativo</h3>
+      <p>
+        O Politécnico de Coimbra registou 205 estudantes com necessidades educativas específicas em 2024/2025, face a 161 em 2023/2024.
+      </p>
+      <p>
+        Evidencia a procura crescente por respostas de apoio inclusivo.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="stat-highlight">4 Webinars</div>
+      <h3>Formação sobre dislexia</h3>
+      <p>
+        Em 2024/2025, o Politécnico de Coimbra realizou quatro webinars sobre dislexia e outras dificuldades de aprendizagem para docentes e não docentes.
+      </p>
+      <p>
+        Demonstra maior sensibilização e atenção à dislexia no contexto educativo.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="missao">
+  <div class="mission-box">
+    <h2>A nossa Missão</h2>
+    <p>
+      Desenvolver soluções tecnológicas inovadoras, fiáveis e acessíveis que ajudem pessoas com dislexia
+      a ultrapassar dificuldades na escrita, promovendo a autonomia, a confiança e a igualdade de oportunidades na educação.
+    </p>
+  </div>
+
+  <div class="pros-cons">
+    <article class="card">
+      <h3>A nossa Visão</h3>
+      <p>
+        Tornar-nos uma marca de referência e confiança no mercado das tecnologias de apoio à dislexia,
+        expandindo no futuro para novas soluções dedicadas às dificuldades de aprendizagem.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Os nossos Valores</h3>
+      <p>Os três pilares que orientam o desenvolvimento da nossa miniempresa:</p>
+      <div class="values-list">
+        <span class="value-badge">💡 Inovação</span>
+        <span class="value-badge">🚀 Autonomia</span>
+        <span class="value-badge">🤝 Confiança</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="bg-light">
+  <h2 class="section-title">Vantagens e Desafios</h2>
+  <p class="section-description">
+    Encaramos o desenvolvimento tecnológico com transparência, reconhecendo o nosso impacto e os desafios a superar.
+  </p>
+
+  <div class="pros-cons">
+    <article class="card pros">
+      <h3>✓ Vantagens</h3>
+      <p>• Apoio ao rastreio precoce de forma não invasiva.</p>
+      <p>• Maior inclusão escolar e autonomia no dia a dia.</p>
+      <p>• Utilização prática e discreta em sala de aula.</p>
+      <p>• Sugestões de correção em tempo real.</p>
+      <p>• Reforço da autoestima e confiança do aluno.</p>
+    </article>
+
+    <article class="card cons">
+      <h3>! Desafios</h3>
+      <p>• Custo elevado de desenvolvimento e produção inicial.</p>
+      <p>• Concorrência com outras soluções digitais no mercado.</p>
+      <p>• Minimizar erros de reconhecimento de caligrafia.</p>
+      <p>• Curva de adaptação inicial dos utilizadores.</p>
+      <p>• Garantia rigorosa de privacidade e proteção de dados.</p>
+    </article>
+  </div>
+
+  <p class="notice">
+    * Nota importante: A identificação de padrões de escrita pela DyslexiPen serve apenas como apoio educativo e não substitui um diagnóstico clínico realizado por profissionais qualificados.
+  </p>
+</section>
+
+<section id="ods">
+  <h2 class="section-title">O nosso impacto nos ODS</h2>
+  <p class="section-description">
+    A DyslexiPen está alinhada com três Objetivos de Desenvolvimento Sustentável das Nações Unidas.
+  </p>
+
+  <div class="cards">
+    <article class="card ods-card">
+      <div class="ods-number">ODS 3</div>
+      <h3>Saúde e Bem-Estar</h3>
+      <p>
+        Promover a saúde mental, a autoestima e o bem-estar emocional dos alunos através do apoio atempado às suas dificuldades.
+      </p>
+    </article>
+
+    <article class="card ods-card">
+      <div class="ods-number">ODS 4</div>
+      <h3>Educação de Qualidade</h3>
+      <p>
+        Garantir uma educação inclusiva e equitativa, reduzindo o insucesso e o abandono escolar associados às dificuldades de escrita.
+      </p>
+    </article>
+
+    <article class="card ods-card">
+      <div class="ods-number">ODS 9</div>
+      <h3>Indústria e Inovação</h3>
+      <p>
+        Incentivar a investigação tecnológica aplicada para criar ferramentas acessíveis que transformam o ensino.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="bg-light" id="faq">
+  <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+  <p class="section-description">
+    Esclarece as principais dúvidas sobre o funcionamento e o objetivo da DyslexiPen.
+  </p>
+
+  <div class="faq-container">
+    <details>
+      <summary>A DyslexiPen faz diagnóstico médico de dislexia?</summary>
+      <p>Não. O sistema identifica padrões comuns de troca ou confusão de letras e alerta para possíveis sinais, mas o diagnóstico definitivo deve ser sempre realizado por profissionais de saúde e educação qualificados.</p>
+    </details>
+
+    <details>
+      <summary>Para que idades é recomendada?</summary>
+      <p>O projeto foi pensado principalmente para crianças e jovens em idade escolar, entre os 7 e os 18 anos, acompanhando todo o percurso académico.</p>
+    </details>
+
+    <details>
+      <summary>Pode ser usada na escola sem chamar a atenção?</summary>
+      <p>Sim. Um dos nossos principais objetivos é oferecer um apoio discreto, para que o aluno se sinta totalmente integrado na turma.</p>
+    </details>
+  </div>
+</section>
+
+<section class="contact" id="contactos">
+  <h2 class="section-title">Fala connosco</h2>
+  <p class="section-description">
+    Tens dúvidas, sugestões ou gostarias de acompanhar o projeto? Envia-nos uma mensagem ou visita a nossa rede social!
+  </p>
+
+  <div class="social-box">
+    <p>Acompanha as novidades da miniempresa no Instagram:</p>
+    <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+      Seguir @dyslexipen no Instagram
+    </a>
+  </div>
+
+  <form class="contact-form" action="https://formspree.io/f/mgakrnzo" method="POST">
+    <input type="text" name="nome" placeholder="O teu nome" required>
+    <input type="email" name="email" placeholder="O teu e-mail" required>
+    <textarea name="mensagem" rows="4" placeholder="Escreve aqui a tua dúvida ou sugestão..." required></textarea>
+    <button type="submit" class="btn">Enviar Mensagem</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-brand">
+    <img src="https://rs1978rs1978rafael-prog.github.io/DyslexiPen/lgdp.jpg" alt="Logótipo DyslexiPen">
+    <h3>DyslexiPen</h3>
+  </div>
+  <p>Cada letra no lugar, mais sonhos para alcançar!</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer">Instagram (@dyslexipen)</a>
+    <a href="mailto:rs1978rs1978rafael@gmail.com">rs1978rs1978rafael@gmail.com</a>
+  </div>
+  <p>© 2026 DyslexiPen — Miniempresa em desenvolvimento.</p>
+</footer>
+
+</body>
+</html>

@@ -26,7 +26,7 @@
 
     header {
       background: white;
-      padding: 18px 8%;
+      padding: 16px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -37,10 +37,19 @@
     }
 
     .logo {
-      font-size: 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
       font-weight: bold;
       color: #173B68;
       text-decoration: none;
+    }
+
+    .logo img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
     }
 
     nav {
@@ -327,6 +336,23 @@
       padding: 35px 8%;
     }
 
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand img {
+      height: 38px;
+      width: auto;
+      background: #ffffff;
+      padding: 3px;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+
     footer p {
       font-size: 14px;
       color: #d0dbea;
@@ -376,7 +402,10 @@
 <body>
 
 <header>
-  <a href="#inicio" class="logo">✒ DyslexiPen</a>
+  <a href="#inicio" class="logo">
+    <img src="lgdp.jpg" alt="Logótipo DyslexiPen">
+    <span>DyslexiPen</span>
+  </a>
 
   <nav aria-label="Navegação principal">
     <a href="#produto">Produto</a>
@@ -599,7 +628,10 @@
 </main>
 
 <footer>
-  <h3>✒ DyslexiPen</h3>
+  <div class="footer-brand">
+    <img src="lgdp.jpg" alt="Logótipo DyslexiPen">[cite: 1]
+    <h3>DyslexiPen</h3>
+  </div>
   <p>Cada letra no lugar, mais sonhos para alcançar!</p>
   <p>© 2026 DyslexiPen — Miniempresa em desenvolvimento.</p>
 </footer>

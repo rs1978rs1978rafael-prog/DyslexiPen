@@ -5,8 +5,8 @@
   <meta name="google-site-verification" content="7emLmIG0Nu5Z22Z1-fkRZ5gKr33Z-ac-czIluh00Tqg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DyslexiPen | Tecnologia para uma escrita inclusiva</title>
-  <meta name="description" content="Conhece a DyslexiPen, uma caneta inteligente que ajuda crianças e jovens com dislexia na escrita em tempo real e promove a inclusão escolar.">
-  <meta name="keywords" content="DyslexiPen, dislexia, caneta inteligente, escrita, inclusão escolar, educação, tecnologia educativa">
+  <meta name="description" content="Conhece a DyslexiPen, um projeto de tecnologia educativa que pretende apoiar pessoas com dislexia na escrita e promover a inclusão escolar.">
+  <meta name="keywords" content="DyslexiPen, dislexia, escrita, inclusão escolar, educação, tecnologia educativa">
   <meta name="theme-color" content="#173B68">
 
   <style>
@@ -104,6 +104,13 @@
       margin-bottom: 28px;
     }
 
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
     .btn {
       display: inline-block;
       background: #2169A5;
@@ -123,11 +130,30 @@
       transform: translateY(-2px);
     }
 
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #173B68;
+      border: 2px solid #2169A5;
+      padding: 11px 22px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: #edf5ff;
+      transform: translateY(-2px);
+    }
+
     .hero-image {
       width: 42%;
       max-width: 490px;
       border-radius: 24px;
       box-shadow: 0 15px 35px rgba(23, 59, 104, 0.12);
+      object-fit: cover;
     }
 
     section {
@@ -161,8 +187,10 @@
 
     .product img {
       width: 42%;
+      max-width: 470px;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      object-fit: cover;
     }
 
     .product-text {
@@ -305,6 +333,16 @@
       background: #edf5ff;
     }
 
+    .social-box {
+      margin-bottom: 28px;
+    }
+
+    .social-box p {
+      color: #334155;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
     .contact-form {
       max-width: 540px;
       margin: 0 auto;
@@ -359,6 +397,25 @@
       margin-top: 6px;
     }
 
+    .footer-links {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
     .notice {
       font-size: 13px;
       color: #64748b;
@@ -382,6 +439,10 @@
         flex-direction: column;
         text-align: center;
         padding: 60px 7%;
+      }
+
+      .hero-actions {
+        justify-content: center;
       }
 
       .hero-image, .product img {
@@ -426,39 +487,42 @@
     <h1>Cada letra no lugar, mais sonhos para alcançar!</h1>
 
     <p>
-      Conhece a DyslexiPen: uma caneta inteligente que deteta padrões de escrita,
-      sugere correções em tempo real e promove a inclusão escolar e a autonomia.
+      Conhece a DyslexiPen: um projeto de tecnologia educativa focado em identificar
+      padrões de escrita, sugerir correções em tempo real e promover a inclusão escolar e a autonomia.
     </p>
 
-    <a href="#produto" class="btn">Conhecer o projeto</a>
+    <div class="hero-actions">
+      <a href="#produto" class="btn">Conhecer o projeto</a>
+      <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer" class="btn-outline">Instagram @dyslexipen</a>
+    </div>
   </div>
 
   <img class="hero-image"
-    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
-    alt="Material de escrita sobre uma secretária">
+    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900"
+    alt="Ambiente de aprendizagem e estudo inclusivo">
 </section>
 
 <section class="product bg-light" id="produto">
   <img
-    src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=900"
-    alt="Caneta e material de escrita">
+    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+    alt="Tecnologia aplicada à educação e aprendizagem">
 
   <div class="product-text">
     <span class="tag">A NOSSA SOLUÇÃO</span>
-    <h2>Uma caneta. Novas possibilidades.</h2>
+    <h2>Uma ideia focada na escrita e na inclusão.</h2>
 
     <p>
-      A <strong>DyslexiPen</strong> utiliza tecnologia de reconhecimento da escrita para
+      A <strong>DyslexiPen</strong> está a ser pensada com tecnologia de reconhecimento da escrita para
       identificar possíveis erros ortográficos, trocas e confusões entre letras no momento em que o aluno escreve.
     </p>
 
     <p>
       Ao apresentar sugestões de correção em tempo real de forma prática e discreta,
-      permite que cada estudante melhore o seu desempenho sem se sentir diferente dos colegas.
+      pretende permitir que cada estudante melhore o seu desempenho sem se sentir diferente dos colegas.
     </p>
 
     <p>
-      Além disso, ajuda a reconhecer sinais precoces de dificuldades na escrita, incentivando a procura atempada de acompanhamento especializado.
+      Além disso, poderá ajudar a reconhecer sinais precoces de dificuldades na escrita, incentivando a procura atempada de acompanhamento especializado.
     </p>
   </div>
 </section>
@@ -466,7 +530,7 @@
 <section id="publico">
   <h2 class="section-title">Para quem foi criada?</h2>
   <p class="section-description">
-    Uma ferramenta pensada para apoiar o dia a dia escolar e criar uma ponte entre alunos, famílias e especialistas.
+    Uma solução pensada para apoiar o dia a dia escolar e criar uma ponte entre alunos, famílias e especialistas.
   </p>
 
   <div class="cards">
@@ -596,7 +660,7 @@
   <div class="faq-container">
     <details>
       <summary>A DyslexiPen faz diagnóstico médico de dislexia?</summary>
-      <p>Não. A caneta identifica padrões comuns de troca ou confusão de letras e alerta para possíveis sinais, mas o diagnóstico definitivo deve ser sempre realizado por profissionais de saúde e educação qualificados.</p>
+      <p>Não. O sistema identifica padrões comuns de troca ou confusão de letras e alerta para possíveis sinais, mas o diagnóstico definitivo deve ser sempre realizado por profissionais de saúde e educação qualificados.</p>
     </details>
 
     <details>
@@ -606,7 +670,7 @@
 
     <details>
       <summary>Pode ser usada na escola sem chamar a atenção?</summary>
-      <p>Sim. Um dos nossos principais objetivos é oferecer um apoio discreto, com o formato de uma caneta comum, para que o aluno se sinta totalmente integrado na turma.</p>
+      <p>Sim. Um dos nossos principais objetivos é oferecer um apoio discreto, para que o aluno se sinta totalmente integrado na turma.</p>
     </details>
   </div>
 </section>
@@ -614,8 +678,15 @@
 <section class="contact" id="contactos">
   <h2 class="section-title">Fala connosco</h2>
   <p class="section-description">
-    Tens dúvidas, sugestões ou gostarias de testar o projeto na tua escola? Envia-nos uma mensagem!
+    Tens dúvidas, sugestões ou gostarias de acompanhar o projeto? Envia-nos uma mensagem ou visita a nossa rede social!
   </p>
+
+  <div class="social-box">
+    <p>Acompanha as novidades da miniempresa no Instagram:</p>
+    <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+      Seguir @dyslexipen no Instagram
+    </a>
+  </div>
 
   <form class="contact-form" action="mailto:contacto@dyslexipen.pt" method="post" enctype="text/plain">
     <input type="text" name="nome" placeholder="O teu nome" required>
@@ -629,10 +700,13 @@
 
 <footer>
   <div class="footer-brand">
-    <img src="lgdp.jpg" alt="Logótipo DyslexiPen">[cite: 1]
+    <img src="lgdp.jpg" alt="Logótipo DyslexiPen">
     <h3>DyslexiPen</h3>
   </div>
   <p>Cada letra no lugar, mais sonhos para alcançar!</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/dyslexipen/" target="_blank" rel="noopener noreferrer">Instagram (@dyslexipen)</a>
+  </div>
   <p>© 2026 DyslexiPen — Miniempresa em desenvolvimento.</p>
 </footer>
 
